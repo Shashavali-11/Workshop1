@@ -1,194 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkShop1</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <style>
-        .parent1{
-            padding: 10px;
-            
-
+      * {
+        padding: 0px;
+        margin: 2px;
+      }
+      @media screen and (max-width: 426px) {
+        .parent1 {
+          /* border: 2px solid red;  */
+          height: 50vh;
+          width: 98vw;
+          
         }
-        .nav{
-            position: absolute;
-            top: 10%;
-            left: 35%;
-            transform: translate(-50%, -50%);
-
+        #trb{
             font-size: large;
-
+            color: violet;
         }
-        .travel{
-            font-size: xx-large;
+        .nav {
+          /* border: 2px solid red; */
+          display: flex;
+          justify-content: space-around;
+          position: static;
+        }
+        .anc {
+          /* border: 2px solid green; */
+          display: flex;
+          justify-content: space-evenly;
+        }
+        #an {
+          text-decoration: none;
+          color: black;
+          
+        }
+        #an:hover {
+          box-shadow: 2px 2px 2px;
+        }
+        .imgtext {
+          padding-top: 100px;
+          color: white;
+          background-image: url("neom-eOWabmCNEdg-unsplash.jpg");
+          background-size: contain;
+          background-repeat: no-repeat;  
+          height: 45vh;
+          width: 96vw;
+        }
+        #imgh1 {
+          /* border: 2px solid red; */
+          margin-left: 50px;
 
+          width: 150px;
+          font-size: large;
+        }
+        .para {
+          /* border: 2px solid blue; */
+          width: 300px;
+          margin-left: 50px;
+          font-size: x-small;
+        }
+        #imgb {
+          border: 2px solid black;
+          color: violet;
+          margin-left: 50px;
+          /* margin-bottom: 200px; */
+          height: 30px;
+          width: 130px;
+        }
+        #imgb:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 2px;
+        }
+        .parent2 {
+          /* border: 2px solid red; */
+          margin: 20px 0px;
+          width: 100vw;
+        }
+        .p2h {
+          width: 70vw;
+          margin: 10px 20px;
+        }
+        .c1 {
+          border: 2px solid black;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 30px;
+          height: 30vh;
+          width: 70vw;
+          display: flex;
+          flex-direction: column;
+        }
+        .c1:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+        }
+
+        .c2 {
+          border: 2px solid black;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 30px;
+          height: 30vh;
+          width: 70vw;
+          display: flex;
+          flex-direction: column;
+        }
+        .c2:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+        }
+
+
+
+        .parent3 {
+          background-color: blueviolet;
+          color: white;
+          display: flex;
+          justify-content: space-around;
+          width: 98vw;
+          height: auto;
+        }
+        .connect{
+            padding-top: 18px;
+            width: 100px;
+            font-size: small;
+
+            
         }
         a{
-            text-decoration: none;
-
-        }
-        a:hover{
-            box-shadow: 2px 2px 2px;
-        }
-        .imgtext{
-            position: absolute;
-            top: 50%;
-            left: 25%;
-            transform: translate(-50%, -50%);
             color: white;
+            font-size: small;
+            text-decoration: none;
+        }
+      }
 
+      @media screen and (min-width: 427px) and (max-width: 769px) {
+        .parent1 {
+          /* border: 2px solid; */
+          background-image: url('neom-eOWabmCNEdg-unsplash.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;  
+          height: 70vh;
+          width: 98vw;
         }
-        h1{
-            font-size: 100px;
+        #trb{
+            font-size: x-large;
+            color: violet;
         }
-        .para{
-            /* border: 2px solid; */
-            height: 200px;
-            width: 500px;
+        .nav {
+          /* border: 2px solid red; */
+          display: flex;
+          justify-content: space-around;
+          position: static;
         }
-        button{
-            position: absolute;
-            top: 70%;
-            left: 15%;
-            transform: translate(-50%, -50%);
-            height: 40px;
-            color: blueviolet;
+        .anc {
+          /* border: 2px solid green; */
+          display: flex;
+          justify-content: space-evenly;
+          font-size: large;
+        }
+        #an {
+          text-decoration: none;
+          color: black;
+          
+        }
+        #an:hover {
+          box-shadow: 2px 2px 2px;
+        }
+        .imgtext {
+          padding-top: 200px;
+          color: white;
+        }
+        #imgh1 {
+          /* border: 2px solid red; */
+          margin-left: 50px;
+
+          width: 150px;
+          font-size: x-large;
+        }
+        .para {
+          /* border: 2px solid blue; */
+          width: 500px;
+          margin-left: 50px;
+          font-size: small;
+        }
+        #imgb {
+          border: 2px solid black;
+          color: violet;
+          margin-left: 50px;
+          height: 30px;
+          width: 130px;
+        }
+        #imgb:hover{
+            cursor: pointer;
             box-shadow: 2px 2px 2px;
         }
-
-        .parent2{
-            /* border: 2px solid; */
-            padding: 10px ;
-            margin: 40px;
-
-
-
+        .parent2 {
+          /* border: 2px solid red; */
+          margin: 20px 10px;
+          width: 98vw;
+        }
+        .p2h {
+          width: 70vw;
+          margin: 10px 20px;
         }
         .child{
-            display: flex;
+            display:flex ;
             justify-content: space-around;
-
-
+          
         }
-        .c1{
-            margin: 100px;
-            padding: 10px;
-            /* border: 2px solid red; */
-            height: 200px;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-
-            justify-content: space-between;
+        .c1 {
+          border: 2px solid black;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 20px;
+          height: 50vh;
+          width: 98vw;
+          display: flex;
+          flex-direction: column;
         }
-        .link{
-            background-color: blueviolet;
-            padding: 80px 250px;
-
-        }
-        .parent3{
-            display: flex;
-            justify-content: space-evenly;
+        .c1:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
         }
 
+        .c2 {
+          border: 2px solid black;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 20px;
+          height: 50vh;
+          width: 98vw;
+          display: flex;
+          flex-direction: column;
+        }
+        .c2:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+        }
+        .parent3 {
+          background-color: blueviolet;
+          color: white;
+          display: flex;
+          justify-content: space-around;
+          width: 98vw;
+          height: auto;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+      }
+
+      @media screen and (min-width: 770px) {
+        .parent1 {
+          /* border: 2px solid; */
+          /* background-color: lightgreen; */
+          background-image: url('neom-eOWabmCNEdg-unsplash.jpg');
+          background-size: cover;
+          background-repeat: no-repeat; 
+          height: 90vh;
+          width: 98vw;
+        }
+        #trb{
+            font-size: xx-large;
+            color: violet;
+        }
+        .nav {
+          /* border: 2px solid red; */
+          display: flex;
+          justify-content: space-around;
+          position: static;
+        }
+        .anc {
+          /* border: 2px solid green; */
+          display: flex;
+          justify-content: space-evenly;
+          font-size: x-large;
+        }
+        #an {
+          text-decoration: none;
+          color: black;
+          
+        }
+        #an:hover {
+          box-shadow: 2px 2px 2px;
+        }
+        .imgtext {
+          padding-top: 200px;
+          color: white;
+        }
+        #imgh1 {
+          /* border: 2px solid red; */
+
+          margin-left: 100px;
+
+          width: 150px;
+          font-size: xx-large;
+        }
+        .para {
+          /* border: 2px solid blue; */
+          width: 500px;
+          margin-left: 100px;
+          font-size: large;
+        }
+        #imgb {
+          border: 2px solid black;
+          color: violet;
+          margin-left: 100px;
+          height: 30px;
+          width: 130px;
+        }
+        #imgb:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 2px;
+        }
+        .parent2 {
+          /* border: 2px solid red; */
+          margin: 20px 0px;
+          width: 98vw;
+        }
+        .p2h {
+          width: 70vw;
+          margin: 10px 40px;
+        }
+        .child{
+            display:flex ;
+            justify-content: space-around;
+          
+        }
+        .c1 {
+          border: 2px solid black;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 30px;
+          height: 30vh;
+          width: 30vw;
+          display: flex;
+          flex-direction: column;
+        }
+        .c1:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+        }
+
+        .c2 {
+          border: 2px solid black;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 30px;
+          height: 30vh;
+          width: 30vw;
+          display: flex;
+          flex-direction: column;
+        }
+        .c2:hover {
+          cursor: pointer;
+          transform: scale(1.1, 1.1);
+        }
+        .parent3 {
+          background-color: blueviolet;
+          color: white;
+          display: flex;
+          justify-content: space-around;
+          padding: 100px 0px;
+          width: 98vw;
+          height: 40vh;
+        }
+        a{
+            font-size: x-large;
+            color: white;
+            text-decoration: none;
+        }
+        .connect{
+            font-size: x-large;
+          padding: 50px 0px;
+            
+        }
+        .connect:hover{
+            cursor: pointer;
+        }
 
 
 
-
+      }
 
     </style>
-
-
-
-</head>
-<body>
-    <div class="parent1" >
-        <img src="neom-eOWabmCNEdg-unsplash.jpg" alt="" height="780px" width="1660px" >
-        <div class="nav">
-            <div class="travel" ><b>Travel</b></div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <div>
-                <a href="#"><b>Home</b></a>&emsp;&emsp;&emsp;
-                <a href="#"><b>Services</b></a>&emsp;&emsp;&emsp;
-                <a href="#"><b>ContactUs</b></a>
-            </div>
+  </head>
+  <body>
+    <div class="parent1">
+      <div class="nav" style="background-color: white">
+        <div class="travel">
+          <b id="trb" >Travel</b>
         </div>
-        <div class="imgtext">
-            <h1>Fuel Mind</h1>
-            <h1>Travel</h1>
-            <div class="para" >
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est praesentium deleniti incidunt nisi officiis vel dicta quae repellendus, similique eveniet! Impedit pariatur dolorum repudiandae. Vitae possimus rerum laborum soluta?</p>
-
-            </div>
+        <div class="anc">
+          <div>
+            <a href="#" id="an" ><b>Home</b></a
+            >&emsp;&emsp;&emsp;
+          </div>
+          <div>
+            <a href="#" id="an" ><b>Services</b></a
+            >&emsp;&emsp;&emsp;
+          </div>
+          <div>
+            <a href="#" id="an" ><b>ContactUs</b></a>
+          </div>
         </div>
-        <button>Let's Go Now!</button>
+      </div>
+      
+      <div class="imgtext">
+        <h1 id="imgh1">Fuel Mind Travel</h1>
+        <br />
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est
+            praesentium deleniti incidunt nisi officiis vel dicta quae
+            repellendus, similique eveniet! Impedit pariatur dolorum
+            repudiandae. Vitae possimus rerum laborum soluta?
+          </p>
+          <br />
+        </div>
+      <button id="imgb">Let's Go Now!</button>
 
+      </div>
+      
     </div>
 
     <div class="parent2">
-        <h1>Start your vacation</h1>
-        <h1>with lots of services</h1>
+      <h1 class="p2h">Start your vacation with lots of services</h1>
 
-        <div class="child" >
-            <div class="c1" >
-                <img src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg" alt=" " height="60px" width="60px" id="img1">
-                <p><b>Ship Cruise</b></p>
-                <p><b>150 Properties</b></p>
-    
-            </div>
-            <div class="c1" >
-                <img src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg" alt=" " height="60px" width="60px" id="img1">
-                <p><b>Ship Cruise</b></p>
-                <p><b>150 Properties</b></p>
-    
-            </div>
-            <div class="c1" >
-                <img src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg" alt=" " height="60px" width="60px" id="img1">
-                <p><b>Ship Cruise</b></p>
-                <p><b>150 Properties</b></p>
-    
-            </div>
-
+      <div class="child">
+        <div class="c1">
+          <img
+            src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg"
+            alt=" "
+            height="60px"
+            width="60px"
+            id="img1"
+          />
+          <p><b>Ship Cruise</b></p>
+          <p><b>150 Properties</b></p>
         </div>
-
+        <div class="c1">
+          <img
+            src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg"
+            alt=" "
+            height="60px"
+            width="60px"
+            id="img1"
+          />
+          <p><b>Ship Cruise</b></p>
+          <p><b>150 Properties</b></p>
+        </div>
+        
+      </div>
+      <div class="child">
+      <div class="c2">
+        <img
+          src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg"
+          alt=" "
+          height="60px"
+          width="60px"
+          id="img1"
+        />
+        <p><b>Ship Cruise</b></p>
+        <p><b>150 Properties</b></p>
+      </div>
+      <div class="c2">
+        <img
+          src="ian-simmonds-XrDbdmqsPdk-unsplash.jpg"
+          alt=" "
+          height="60px"
+          width="60px"
+          id="img1"
+        />
+        <p><b>Ship Cruise</b></p>
+        <p><b>150 Properties</b></p>
+      </div>
+    </div>
     </div>
 
-    <div class="parent3" >
-        <div class="link" >
-            <a href="#"><h3>Quick Links</h3></a><br>
-            <a href="#">About</a><br>
-            <a href="#">Terms and Condition</a><br>
-            <a href="#">Privacy Policy</a><br>
-            <a href="#">Help</a><br>
-            <a href="#">Tour</a><br>
-
-        </div>
-        <div class="link" >
-            <a href="#"><h3>Quick Links</h3></a><br>
-            <a href="#">About</a><br>
-            <a href="#">Terms and Condition</a><br>
-            <a href="#">Privacy Policy</a><br>
-            <a href="#">Help</a><br>
-            <a href="#">Tour</a><br>
-
-        </div>
-
-        <div class="link" >
-            <a href="#"><h3>Quick Links</h3></a><br>
-            <a href="#">About</a><br>
-            <a href="#">Terms and Condition</a><br>
-            <a href="#">Privacy Policy</a><br>
-            <a href="#">Help</a><br>
-            <a href="#">Tour</a><br>
-
-        </div>
-
+    <div class="parent3">
+      <div class="link">
+        <a href="#"><h3>Quick Links</h3></a><br />
+        <a href="#">About</a><br />
+        <a href="#">Terms and Condition</a><br />
+        <a href="#">Privacy Policy</a><br />
+        <a href="#">Help</a><br />
+        <a href="#">Tour</a><br />
+      </div>
+      <div class="link">
+        <a href="#"><h3>Quick Links</h3></a><br />
+        <a href="#">About</a><br />
+        <a href="#">Terms and Condition</a><br />
+        <a href="#">Privacy Policy</a><br />
+        <a href="#">Help</a><br />
+        <a href="#">Tour</a><br />
+      </div>
+      <div class="link">
+        <a href="#"><h3>Quick Links</h3></a><br />
+        <a href="#">About</a><br />
+        <a href="#">Terms and Condition</a><br />
+        <a href="#">Privacy Policy</a><br />
+        <a href="#">Help</a><br />
+        <a href="#">Tour</a><br />
+      </div>
+      <div class="connect">
+        <h3>Connect</h3>
+        <br />
+        <ion-icon name="logo-facebook" class="ico"></ion-icon>
+        <ion-icon name="logo-instagram" class="ico"></ion-icon>
+        <ion-icon name="logo-twitter" class="ico"></ion-icon>
+        <ion-icon name="logo-linkedin" class="ico"></ion-icon>
+      </div>
     </div>
-
-    
-
-
-
-
-    
-</body>
+  </body>
 </html>
+&emsp;
+
+
